@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cv-game",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8090", "-d", "D:/Code/CV_Video_Game"],
+      "port": 8090,
+      "autoPort": true
+    }
+  ]
+}
