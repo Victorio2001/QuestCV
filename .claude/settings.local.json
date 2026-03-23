@@ -40,7 +40,9 @@
       "Bash(done)",
       "Bash(node -c js/scenes/GameScene.js)",
       "Bash(node -e \":*)",
-      "Bash(node -c js/scenes/UIScene.js)"
+      "Bash(node -c js/scenes/UIScene.js)",
+      "Bash(node -c js/music.js)",
+      "Bash(node -c js/scenes/TitleScene.js)"
     ]
   }
 }

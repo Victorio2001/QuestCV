@@ -117,6 +117,11 @@ class TitleScene extends Phaser.Scene {
     _startGame() {
         if (!this.canStart) return;
         this.canStart = false;
+        // Start music on first user interaction
+        if (typeof Music !== 'undefined') {
+            Music.init();
+            Music.start();
+        }
         this.cameras.main.fadeOut(500, 5, 5, 16);
         this.cameras.main.once('camerafadeoutcomplete', () => {
             this.scene.start('GameScene');

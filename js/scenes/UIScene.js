@@ -327,6 +327,7 @@ class UIScene extends Phaser.Scene {
             if (key === 'victory_final') {
                 this.scene.get('GameScene').cameras.main.fadeOut(1500, 0, 0, 0);
                 this.time.delayedCall(2000, () => {
+                    if (typeof Music !== 'undefined') Music.stop();
                     this.scene.stop('GameScene');
                     this.scene.stop('UIScene');
                     this.scene.start('TitleScene');
